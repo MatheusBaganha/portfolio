@@ -1,0 +1,23 @@
+.dev {
+  color: #F9F9F9;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.descricao {
+  color: #DCDCDC;
+  max-width: 40ch;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.botao {
+  display: block;
+  background-color: #5C49C7;
+  color: #E5E5E5;
+  text-decoration: none;
+  max-width: 120px;
+  padding: 10px 30px;
+  border-radius: 6px;
+  font-weight: 400;
+}

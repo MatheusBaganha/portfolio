@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 0 0 128px;
+}
+
+.logo-container img {
+  width: 100px;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+}
+
+.nav li a {
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+  color: #F9F9F9;
+  transition: 0.1s ease-out;
+}
+
+.nav li:last-child {
+  padding-right: 128px;
+}
+
+.nav li a:hover {
+  color: #DADADA;
+}
