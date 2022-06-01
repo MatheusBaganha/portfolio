@@ -1,14 +1,37 @@
+.home-container {
+  margin: 128px;
+}
+
 .dev {
   color: #F9F9F9;
   font-size: 4rem;
   font-weight: 700;
+  position: relative;
+  text-shadow: 1px 1px rgba(0, 0, 0, .15) ;
+}
+
+b {
+  color: #7562E0;
+}
+
+.detalhe {
+  display: inline-block;
+  background: url('../svg/detalhe.svg') no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1; 
+  top: 0;
+  left: -25px;
 }
 
 .descricao {
   color: #DCDCDC;
-  max-width: 40ch;
+  max-width: 42ch;
   font-size: 1.125rem;
   font-weight: 400;
+  margin: 18px 0;
+  line-height: 28px;
 }
 
 .botao {
@@ -16,8 +39,20 @@
   background-color: #5C49C7;
   color: #E5E5E5;
   text-decoration: none;
-  max-width: 120px;
+  text-align: center;
+  width: 120px;
   padding: 10px 30px;
   border-radius: 6px;
   font-weight: 400;
+  margin-top: 22px;
+  transition: .1s ease-out;
+}
+
+.botao:hover {
+  background-color: #4A37B9;
+  color: #F4F4F4;
+  border-radius: 3px;
+  width: 140px;
+
+
 }
