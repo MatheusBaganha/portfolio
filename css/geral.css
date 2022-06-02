@@ -7,3 +7,27 @@ body {
   background-color: #1F1F1F;
   font-family: 'Poppins', sans-serif;
 }
+
+.dev-titulo {
+  color: #F9F9F9;
+  font-size: 4rem;
+  font-weight: 700;
+  position: relative;
+  text-shadow: 5px 5px rgba(0, 0, 0, .15);
+}
+
+b {
+  color: #7562E0;
+}
+
+.veja-mais {
+  color: #A090FC;
+  font-weight: 400;
+  cursor: pointer;
+  transition: .1s ease-out;
+}
+
+.veja-mais:hover { 
+  color: #7562E0;
+  
+}

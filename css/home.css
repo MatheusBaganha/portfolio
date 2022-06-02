@@ -10,12 +10,7 @@
   gap: 0 64px;
 }
 
-.dev {
-  color: #F9F9F9;
-  font-size: 4rem;
-  font-weight: 700;
-  position: relative;
-  text-shadow: 1px 1px rgba(0, 0, 0, .15);
+.home-container .dev-titulo {
   grid-area: dev;
 }
 
@@ -30,10 +25,6 @@
 .foto-container img {
   width: 100%;
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, .20));
-}
-
-b {
-  color: #7562E0;
 }
 
 .detalhe {
