@@ -10,7 +10,7 @@
   gap: 0 64px;
 }
 
-.home-container .dev-titulo {
+.dev {
   grid-area: dev;
 }
 
