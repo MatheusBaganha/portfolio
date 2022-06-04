@@ -1,6 +1,5 @@
 .container-habilidades {
   padding: 64px 128px;
-  max-width: 90vw;
 }
 
 .cursos-container-geral {
@@ -15,6 +14,7 @@
   padding-right: 64px;
   padding-left: 3px;
   gap: 18px 68px;
+  width: 100%;
 }
 
 @media(min-width: 1400px) {
