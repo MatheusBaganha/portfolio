@@ -1,0 +1,183 @@
+.container-habilidades {
+  padding: 64px 128px;
+  max-width: 90vw;
+}
+
+.cursos-container-geral {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+  "design1 css1 js1"
+  "design2 css2 js2"
+  "design3 css3 js3"
+  "design4 css4 js4";
+  padding-right: 64px;
+  padding-left: 3px;
+  gap: 18px 68px;
+}
+
+@media(min-width: 1400px) {
+  .cursos-container-geral {
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    gap: 18px 64px;
+
+  }
+}
+/* mudar tamanho do mediaquery */
+@media(max-width: 1023px) {
+  .cursos-container-geral {
+    gap: 18px 42px;
+    padding-bottom: 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}
+
+.design1 {
+  grid-area: design1;
+}
+
+.design2 {
+  grid-area: design2;
+}
+
+.design3 {
+  grid-area: design3;
+}
+
+.design4 {
+  grid-area: design4;
+}
+
+.css1 {
+  grid-area: css1;
+}
+
+.css2 {
+  grid-area: css2;
+}
+
+.css3 {
+  grid-area: css3;
+}
+
+.css4 {
+  grid-area: css4;
+}
+
+.js1 {
+  grid-area: js1;
+}
+
+.js2 {
+  grid-area: js2;
+}
+
+.js3 {
+  grid-area: js3;
+}
+
+.js4 {
+  grid-area: js4;
+}
+
+.cursos-intensivos {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #EFEFEF;
+  position: relative;
+  padding-left: 48px;
+  margin-bottom: 42px;
+}
+
+.cursos-intensivos::before, .idiomas::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+}
+
+.cursos-intensivos::before {
+  background: url('../svg/livro.svg') no-repeat;
+  position: absolute;
+
+}
+
+.container-idiomas {
+  margin-top: 42px;
+  width: 305px;
+}
+
+.idiomas::before {
+  background: url('../svg/idioma.svg') no-repeat;
+}
+
+.curso-container, .ingles-container {
+  display: block;
+  max-width: 280px;
+  border-radius: 3px;
+  padding: 16px;
+  background-color: #292929;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, .1);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, .10);
+
+}
+
+.curso-container::before, .ingles-container::before, .css::before, .js::before {
+  content: '';
+  width: 4px;
+  height: 30px;
+  display: inline-block;
+  background-color: #A090FC;
+  position: absolute;
+  top: 16px;
+  left: -3px;
+  border-radius: 3px;
+}
+
+.curso-container::after, .ingles-container::after  {
+  font-size: 0.875rem;
+  color: #BFBEBE;
+  font-weight: 400;
+}
+
+.curso-container::after {
+  content: 'Origamid';
+}
+
+.css::before {
+  background-color: #6D5BD0;
+}
+
+.js::before {
+  background-color: #3E2BAD;
+}
+
+
+.ingles-container::before {
+  background-color: #321DA9;
+}
+
+.ingles-container::after {
+  content: 'Cultura Inglesa';
+}
+
+.nome-curso {
+  color: #E8E8E8;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom: 12px;
+}
+
+.horas-curso {
+  font-size: 1rem;
+  color: #BFBEBE;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
