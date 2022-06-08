@@ -1,6 +1,8 @@
 .container-habilidades {
-  padding: 64px 128px;
+  padding: 64px 128px 128px 128px;
 }
+
+
 
 .cursos-container-geral {
   display: grid;
@@ -181,3 +183,4 @@
   top: 16px;
   right: 16px;
 }
+

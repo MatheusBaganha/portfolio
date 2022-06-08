@@ -1,0 +1,66 @@
+.footer-container {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) 1fr;
+  grid-template-areas: 
+  "contato contato"
+  "disponivel info"
+  "nome nome";
+  padding: 115px 128px 48px 115px;
+  align-items: center;
+  justify-content: center;
+  gap: 0 228px;
+  background-color: #292929;
+  position: relative;
+}
+
+.contato {
+  grid-area: contato;
+}
+
+.disponivel {
+  grid-area: disponivel;
+  margin: 32px 0 64px 0;
+  width: 50ch;
+}
+
+.contato-info {
+  grid-area: info;
+  margin-top: 5px;
+}
+
+.nome {
+  grid-area: nome;
+  color: #E5E5E5;
+  font-size: 1.3rem;
+}
+
+.contato-info ul {
+  list-style: none;
+}
+
+.font-contato {
+  color: #F5F5F5;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.contatos li {
+  margin-bottom: 16px;
+}
+
+.rede-social {
+  display: flex;
+  gap: 0 16px;
+}
+
+
+.footer-container::after {
+  content: '';
+  display: inline-block;
+  width: 90%;
+  height: 90%;
+  background: url('../svg/detalhe.svg') no-repeat;
+  position: absolute;
+  left: 128px;
+  top: -50px;
+}
