@@ -2,17 +2,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 36px 0 0 128px;
+  padding: 2.25rem 0 0 8rem;
 }
 
 .logo-container img {
-  width: 100px;
+  width: 6.25rem;
 }
 
 .nav {
   display: flex;
   list-style: none;
-  gap: 36px;
+  gap: 2.25rem;
 }
 
 .nav li a {
@@ -24,7 +24,7 @@
 }
 
 .nav li:last-child {
-  padding-right: 128px;
+  padding-right: 8rem;
 }
 
 .nav li a:hover {

@@ -1,13 +1,13 @@
 .home-container {
   display: grid;
-  grid-template-columns: minmax(300px, 1fr) 1fr;
+  grid-template-columns: minmax(18.75rem, 1fr) 1fr;
   grid-template-areas: 
   "dev foto"
   "descricao foto"
   "botao foto";
-  margin: 128px;
+  margin: 8rem;
   align-items: center;
-  gap: 0 64px;
+  gap: 0 4rem;
 }
 
 .dev {
@@ -16,10 +16,9 @@
 
 .foto-container {
   grid-area: foto;
-  box-shadow: 1px 1px 10px #4A37B9;
   border-radius: 30px;
   /* margin-top: -36px;*/
-  width: 500px;
+  width: 31.25rem;
 }
 
 .foto-container img {
@@ -35,7 +34,7 @@
   position: absolute;
   z-index: -1; 
   top: 0;
-  left: -25px;
+  left: -1.562rem;
 }
 
 .descricao {
@@ -43,8 +42,8 @@
   max-width: 42ch;
   font-size: 1.125rem;
   font-weight: 400;
-  margin: 18px 0;
-  line-height: 28px;
+  margin: 1.125rem 0;
+  line-height: 1.75rem;
   grid-area: descricao;
 }
 
@@ -54,8 +53,8 @@
   color: #E5E5E5;
   text-decoration: none;
   text-align: center;
-  width: 120px;
-  padding: 10px 30px;
+  width: 7.5rem;
+  padding: 0.625rem 1.875rem;
   border-radius: 6px;
   font-weight: 400;
   margin-top: 6px;
@@ -67,5 +66,5 @@
   background-color: #4A37B9;
   color: #F4F4F4;
   border-radius: 3px;
-  width: 140px;
+  width: 8.75rem;
 }

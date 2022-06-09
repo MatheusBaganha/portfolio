@@ -1,36 +1,35 @@
 .container-habilidades {
-  padding: 64px 128px 128px 128px;
+  padding: 4rem 8rem 8rem 8rem;
 }
 
 
 
 .cursos-container-geral {
   display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, minmax(18.75rem, 1fr));
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: 
   "design1 css1 js1"
   "design2 css2 js2"
   "design3 css3 js3"
   "design4 css4 js4";
-  padding-right: 64px;
+  padding-right: 4rem;
   padding-left: 3px;
-  gap: 18px 68px;
+  gap: 1.125rem 4.25rem;
   width: 100%;
 }
 
 @media(min-width: 1400px) {
   .cursos-container-geral {
     grid-template-columns: repeat(auto-fill, minmax(300px, auto));
-    gap: 18px 64px;
-
+    gap: 1.125rem 4rem;
   }
 }
 /* mudar tamanho do mediaquery */
 @media(max-width: 1023px) {
   .cursos-container-geral {
-    gap: 18px 42px;
-    padding-bottom: 16px;
+    gap: 1.125rem 2.625rem;
+    padding-bottom: 1rem;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -90,8 +89,8 @@
   font-weight: 700;
   color: #EFEFEF;
   position: relative;
-  padding-left: 48px;
-  margin-bottom: 42px;
+  padding-left: 3rem;
+  margin-bottom: 2.625rem;
 }
 
 .cursos-intensivos::before, .idiomas::before {
@@ -110,8 +109,8 @@
 }
 
 .container-idiomas {
-  margin-top: 42px;
-  width: 305px;
+  margin-top: 2.625rem;
+  width: 19.5rem;
 }
 
 .idiomas::before {
@@ -120,9 +119,9 @@
 
 .curso-container, .ingles-container {
   display: block;
-  max-width: 280px;
+  max-width: 17.5rem;
   border-radius: 3px;
-  padding: 16px;
+  padding: 1rem;
   background-color: #292929;
   position: relative;
   border: 1px solid rgba(0, 0, 0, .1);
@@ -137,7 +136,7 @@
   display: inline-block;
   background-color: #A090FC;
   position: absolute;
-  top: 16px;
+  top: 1rem;
   left: -3px;
   border-radius: 3px;
 }
@@ -173,14 +172,14 @@
   color: #E8E8E8;
   font-size: 1rem;
   font-weight: 700;
-  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
 }
 
 .horas-curso {
   font-size: 1rem;
   color: #BFBEBE;
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 1rem;
+  right: 1rem;
 }
 
