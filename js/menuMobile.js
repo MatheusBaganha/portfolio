@@ -8,9 +8,7 @@ export default class menuMobile {
   }
 
   handleToggle(event) {
-    if (event.type === 'touchstart') {
-      event.preventDefault();
-    }
+    event.preventDefault();
 
     [this.navToggle, this.header].forEach((item) => {
       item.classList.toggle('aberto');
@@ -32,7 +30,6 @@ export default class menuMobile {
   }
 
   handleEvents() {
-    this.btnMenu.addEventListener('touchstart', this.handleToggle);
     this.btnMenu.addEventListener('click', this.handleToggle);
 
     return this;
@@ -40,7 +37,7 @@ export default class menuMobile {
 
   init() {
     this.handleEvents();
-    this.handleToggle(this.btnMenu);
+    this.handleToggle();
 
     return this;
   }
