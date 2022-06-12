@@ -6,6 +6,8 @@
 body {
   background-color: #1F1F1F;
   font-family: 'Poppins', sans-serif;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .titulo {
