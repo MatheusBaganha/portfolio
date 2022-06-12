@@ -8,12 +8,14 @@ export default class menuMobile {
   }
 
   handleToggle(event) {
-    if (event.type === 'touchstart') event.preventDefault();
+    if (event.type === 'touchstart') {
+      event.preventDefault();
+    }
+
     [this.navToggle, this.header].forEach((item) => {
       item.classList.toggle('aberto');
     });
     this.handleAccessibility(event);
-
     return this;
   }
 
@@ -38,7 +40,7 @@ export default class menuMobile {
 
   init() {
     this.handleEvents();
-    this.handleToggle();
+    this.handleToggle(this.btnMenu);
 
     return this;
   }
