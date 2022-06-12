@@ -3,11 +3,12 @@ export default class menuMobile {
     this.navToggle = document.querySelector(nav);
     this.btnMenu = document.querySelector(btn);
     this.header = document.querySelector(item);
+    this.events = ['touchstart', 'click'];
 
-    this.handleToggle = this.handleToggle.bind(this);
+    this.menuToggle = this.menuToggle.bind(this);
   }
 
-  handleToggle(event) {
+  menuToggle(event) {
     if (event.type === 'touchstart') {
       event.preventDefault();
     }
@@ -32,14 +33,18 @@ export default class menuMobile {
   }
 
   handleEvents() {
-    this.btnMenu.addEventListener('touchstart', this.handleToggle);
-    this.btnMenu.addEventListener('click', this.handleToggle);
+    this.events.forEach((event) => {
+      this.btnMenu.addEventListener(event, this.menuToggle);
+    });
 
     return this;
   }
 
   init() {
-    this.handleToggle();
+    if (this.btnMenu && this.navToggle) {
+      this.handleEvents();
+      this.menuToggle();
+    }
 
     return this;
   }
