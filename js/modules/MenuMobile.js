@@ -1,8 +1,9 @@
 export default class MenuMobile {
-  constructor(nav, btn, ...item) {
+  constructor(nav, btn, cssClass, ...item) {
     // Obrigatórios para o funcionamento da classe.
     this.navToggle = document.querySelector(nav);
     this.btnMenu = document.querySelector(btn);
+    this.class = cssClass;
 
     // Header é opcional, caso queira mudar alguma coisa no elemento.
     this.header = document.querySelector(item);
@@ -17,8 +18,13 @@ export default class MenuMobile {
   // Toggle no nav e header e chama metodo para os aria-elements.
   menuToggle() {
     [this.navToggle, this.header].forEach((item) => {
-      item.classList.toggle('aberto');
+      if (item.classList.contains(this.class)) {
+        item.classList.remove(this.class);
+      } else {
+        item.classList.add(this.class);
+      }
     });
+
     this.handleAccessibility();
     return this;
   }

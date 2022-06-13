@@ -139,7 +139,7 @@
     display: block;
     visibility: visible;
     padding-top: 16px;
-    height: calc(55vh - 92px);
+    height: calc(52vh - 92px);
     opacity: 1;
   }
 }
