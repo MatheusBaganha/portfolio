@@ -1,4 +1,4 @@
-export default class menuMobile {
+export default class MenuMobile {
   constructor(nav, btn, ...item) {
     // Obrigatórios para o funcionamento da classe.
     this.navToggle = document.querySelector(nav);
