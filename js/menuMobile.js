@@ -1,45 +1,54 @@
 export default class menuMobile {
   constructor(nav, btn, ...item) {
+    // Obrigatórios para o funcionamento da classe.
     this.navToggle = document.querySelector(nav);
     this.btnMenu = document.querySelector(btn);
+
+    // Header é opcional, caso queira mudar alguma coisa no elemento.
     this.header = document.querySelector(item);
+
+    //  Todos os eventos devem ser colocados aqui.
     this.events = ['touchstart', 'click'];
 
+    //  Mudança de contexto do this de menuToggle.
     this.menuToggle = this.menuToggle.bind(this);
   }
 
-  menuToggle(event) {
-    if (event.type === 'touchstart') {
-      event.preventDefault();
-    }
-
+  // Toggle no nav e header e chama metodo para os aria-elements.
+  menuToggle() {
     [this.navToggle, this.header].forEach((item) => {
       item.classList.toggle('aberto');
     });
-    this.handleAccessibility(event);
+    this.handleAccessibility();
     return this;
   }
 
-  handleAccessibility(event) {
+  //  Lida com os aria-elements baseado se tem a classe aberto ou não.
+  handleAccessibility() {
     const active = this.navToggle.classList.contains('aberto');
-    event.currentTarget.setAttribute('aria-expanded', active);
+    this.btnMenu.setAttribute('aria-expanded', active);
     if (active) {
-      event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+      this.btnMenu.setAttribute('aria-label', 'Fechar Menu');
     } else {
-      event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+      this.btnMenu.setAttribute('aria-label', 'Abrir Menu');
     }
 
     return this;
   }
 
+  //  Adiciona os eventos e previne o padrão, é necessário que esteja em callback para previnir.
   handleEvents() {
     this.events.forEach((event) => {
-      this.btnMenu.addEventListener(event, this.menuToggle);
+      this.btnMenu.addEventListener(event, (e) => {
+        e.preventDefault();
+        this.menuToggle();
+      });
     });
 
     return this;
   }
 
+  //  Ativa as classes necessárias para inicializar a classe caso exista btnMenu e navToggle.
   init() {
     if (this.btnMenu && this.navToggle) {
       this.handleEvents();
@@ -48,4 +57,5 @@ export default class menuMobile {
 
     return this;
   }
+  // Todos os métodos retornam this para caso queira linkar algum método com outro por algum motivo.
 }
