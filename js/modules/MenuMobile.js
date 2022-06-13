@@ -52,7 +52,6 @@ export default class MenuMobile {
   init() {
     if (this.btnMenu && this.navToggle) {
       this.handleEvents();
-      this.menuToggle();
     }
 
     return this;

@@ -75,7 +75,6 @@
     display: block;
     border-top: 2px solid #F9F9F9;
     width: 18px;
-    border-radius: 2px;
   }
   
   .icone-menu::before, .icone-menu::after {
@@ -85,7 +84,6 @@
     height: 2px;
     margin-top: 4px;
     background: #F9F9F9;
-    border-radius: 2px;
     position: relative;
     transition: .3s ease-in;
   }
