@@ -6,7 +6,7 @@
 body {
   background-color: #1F1F1F;
   font-family: 'Poppins', sans-serif;
-  max-width: 1300px;
+  /* max-width: 1300px; */
   margin: 0 auto;
 }
 
@@ -33,6 +33,6 @@ b {
   transition: .1s ease-out;
 }
 
-.veja-mais:hover { 
+.veja-mais:hover, .veja-mais:active  { 
   color: #7562E0;
 }

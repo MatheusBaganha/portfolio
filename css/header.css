@@ -44,6 +44,16 @@
   display: none;
 }
 
+@media(max-width: 1180px) {
+  .header {
+    padding: 2rem 0rem 2rem 4rem;
+  }
+
+  .itens-li li:last-child {
+    padding-right: 4rem;
+  }
+}
+
 @media(max-width: 750px) {
   .header {
     display: flex;
