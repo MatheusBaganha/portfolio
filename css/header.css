@@ -55,6 +55,10 @@
 }
 
 @media(max-width: 750px) {
+  .logo-container {
+    margin-left: 16px;
+  }
+
   .header {
     display: flex;
     align-items: center;
@@ -151,5 +155,11 @@
     padding-top: 16px;
     height: calc(52vh - 92px);
     opacity: 1;
+  }
+}
+
+@media(max-width: 550px) {
+  .logo-container {
+    margin-left: 0px;
   }
 }
