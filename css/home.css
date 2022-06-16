@@ -13,29 +13,32 @@
 
 .dev {
   grid-area: dev;
+  font-size: 3.5rem;
 }
 
-.foto-container {
-  grid-area: foto;
-  /* margin-top: -36px;*/
-  width: 28rem;
-  border-radius: 50%;
-}
-
-.foto-container img {
-  max-width: 100%;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, .20));
-}
-
-.detalhe {
-  display: inline-block;
+.dev::before {
+  content: '';
+  display: flex;
   background: url('../svg/detalhe.svg') no-repeat;
   width: 100%;
+  max-width: 150px;
   height: 100%;
   position: absolute;
   z-index: -1; 
   top: 0;
   left: -1.562rem;
+}
+
+.foto-container {
+  grid-area: foto;
+  border-radius: 50%;
+  width: 18rem;
+  margin: 0 auto;
+}
+
+.foto-container img {
+  max-width: 100%;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, .20));
 }
 
 .descricao {
@@ -72,18 +75,14 @@
 
 
 @media(max-width: 1180px) {
-
   .home-container {
-    grid-template-columns: minmax(5rem, 1fr) 1fr;
     grid-template-areas: 
     "dev foto"
     "descricao foto"
     "botao foto";
     margin: 6rem 4rem 4rem 4rem;
-    align-items: center;
     gap: 0 1rem;
   }
-
 
   .dev {
     font-size: 3rem;
@@ -95,12 +94,6 @@
     margin: 0.5rem 0;
     line-height: 1.55rem;
   }
-
-  .foto-container {
-    /* margin-top: -36px;*/
-    width: 27rem;
-  }
-
 }
 
 @media(max-width: 940px) {
@@ -112,39 +105,42 @@
     "botao"
     "foto";
     margin: 5rem 4rem 4rem 4rem;
-    align-items: center;
-    gap: 0 1rem;
   }
-
 
   .dev {
     font-size: 3rem;
+    line-height: 1.2;
   }
 
   .descricao {
     max-width: 70ch;
     font-size: 1rem;
-    margin: 0.8rem auto;
+    margin: 0.8rem 0;
     line-height: 1.55rem;
   }
 
-
   .foto-container {
-    margin-top: 36px;
-    width: 250px;
-  }
-
-  .foto-container img {
-    border-radius: 100%;
-    border: 1px solid #F4F4F4;
+    margin-top: 64px;
+    max-width: 22rem;
   }
 }
 
 @media(max-width: 550px) {
+  .home-container {
+    margin: 4rem 2rem 4rem 3rem;
+  }
 
   .dev {
     font-size: 2.45rem;
     line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .dev::before {
+    width: 100%;
+    height: 100%; 
+    top: 0px;
+    left: -1.1rem;
   }
 
   .descricao {
@@ -152,37 +148,38 @@
     font-size: 1rem;
     margin: 1.1rem 0;
     line-height: 1.55rem;
+    padding-right: 9px;
+  }
+
+  .foto-container {
+    margin-top: 64px;
+    max-width: 13rem;
   }
 }
 
-@media(max-width: 380px) {
-
+@media(max-width: 380px) { 
   .home-container {
-    margin: 4rem 3rem 3rem 3rem;
+    margin: 4rem 2rem 4rem 3rem;
   }
-
+  
   .dev {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.2;
+    margin-bottom: 1rem;
   }
 
   .descricao {
-    /* max-width: 20ch; */
-    font-size: 0.9rem;
-    margin: 1.1rem 0;
-    line-height: 1.4rem;
+    max-width: 30ch;
+    font-size: 0.8rem;
+    margin: 1rem 0;
+    line-height: 1.3rem;
+    padding-right: 0px;
   }
 
-  .detalhe {
-    display: inline-block;
-    background: url('../svg/detalhe.svg') no-repeat;
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    z-index: -1; 
-    top: 0;
-    left: -1.562rem;
+  .dev::before {
+    width: 140%;
+    height: 140%; 
+    top: -10px;
+    left: -1rem;
   }
 }
-
-/* Problema: svg cortando pela metade, corrigir. */
