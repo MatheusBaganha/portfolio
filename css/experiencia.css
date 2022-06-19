@@ -24,9 +24,20 @@
 }
 
 .container-projeto {
-  width: 24.6rem;
-  height: 18.125rem;
+  width: 30vw;
   transition: .3s ease-in-out;
+  word-break: break-all;
+  opacity: 0.7;
+  transform: scale(0.99);
+  transition: .3s ease-in-out;
+
+}
+
+.container-projeto.ativo {
+  width: 60vw;
+  word-break: normal;
+  opacity: 1;
+  transform: scale(1);
 }
 
 .container-projeto img {
@@ -36,14 +47,9 @@
   box-shadow: 3px 3px 3px rgba(0, 0, 0, .15);
   margin-bottom: 6px; 
   border: 1px solid #1F1F1F;
-  cursor: pointer;
-  /* colocar isso em js */
+  /* cursor: pointer; */
 }
 
-.container-projeto:hover {
-  width: 26.87rem;
-  opacity: 1;
-}
 
 .projeto-titulo {
   color: #F9F9F9;
@@ -65,6 +71,16 @@
   position: absolute;
   top: 1.25rem;
   left: 0px;
+}
+
+@media(max-width: 1180px) {
+  .experiencia-container {
+    padding: 4rem 4rem 5.75rem 4rem;
+  }
+}
+
+@media(max-width: 890px) {
+  
 }
 
 

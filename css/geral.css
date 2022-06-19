@@ -10,6 +10,10 @@ body {
   margin: 0 auto;
 }
 
+ul {
+  list-style: none;
+}
+
 .titulo {
   color: #F9F9F9;
   font-size: 4rem;
