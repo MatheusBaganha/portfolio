@@ -2,8 +2,6 @@
   padding: 4rem 8rem 8rem 8rem;
 }
 
-
-
 .cursos-container-geral {
   display: grid;
   grid-template-columns: repeat(3, minmax(18.75rem, 1fr));
