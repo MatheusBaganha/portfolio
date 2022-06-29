@@ -20,7 +20,7 @@ export default class Slide {
     setInterval(() => {
       this.nextImage();
       this.showActive();
-    }, 5000);
+    }, 55000);
   }
 
   // Mostra qual item está ativo na tela
