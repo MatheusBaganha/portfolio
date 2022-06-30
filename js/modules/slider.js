@@ -1,4 +1,4 @@
-export default class Slide {
+export default class Slider {
   constructor(count, slides, labels, inputs, leftBtn, rightBtn) {
     this.count = count;
     this.slides = document.querySelectorAll(slides);
@@ -20,7 +20,7 @@ export default class Slide {
     setInterval(() => {
       this.nextImage();
       this.showActive();
-    }, 55000);
+    }, 5000);
   }
 
   // Mostra qual item está ativo na tela
@@ -61,6 +61,7 @@ export default class Slide {
     } else if (this.count < 1) {
       this.count = this.slides.length;
     }
+
     document.getElementById(`radio${this.count}`).checked = true;
   }
 
