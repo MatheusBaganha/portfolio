@@ -119,15 +119,16 @@
     line-height: 1.55rem;
   }
 
-  .foto-container {
-    margin-top: 64px;
-    max-width: 22rem;
+  .foto-container img {
+    /* margin-top: 64px;
+    max-width: 22rem; */
+    display: none;
   }
 }
 
 @media(max-width: 550px) {
   .home-container {
-    margin: 4rem 2rem 4rem 3rem;
+    margin: 4rem 2rem 1rem 3rem;
   }
 
   .dev {
@@ -159,7 +160,7 @@
 
 @media(max-width: 380px) { 
   .home-container {
-    margin: 4rem 2rem 4rem 3rem;
+    margin: 4rem 2rem 0.5rem 3rem;
   }
   
   .dev {

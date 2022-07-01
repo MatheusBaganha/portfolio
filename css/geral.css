@@ -22,8 +22,12 @@ ul {
   text-shadow: 5px 5px rgba(0, 0, 0, .15);
 }
 
-b {
+b, a {
   color: #7562E0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .radius {

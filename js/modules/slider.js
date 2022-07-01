@@ -65,6 +65,7 @@ export default class Slider {
     document.getElementById(`radio${this.count}`).checked = true;
   }
 
+  // Move slider para o conteúdo anterior, é necessário dois count--, pois o nextImage adiciona 1
   previousBtn() {
     this.count--;
     this.count--;
@@ -72,6 +73,7 @@ export default class Slider {
     this.showActive();
   }
 
+  // Move slider para o conteúdo posterior e atualiza o seu ativo
   nextBtn() {
     this.nextImage();
     this.showActive();
