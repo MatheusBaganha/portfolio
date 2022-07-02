@@ -13,6 +13,7 @@
 
 .dev {
   grid-area: dev;
+  position: relative;
   font-size: 3.5rem;
 }
 
@@ -89,7 +90,6 @@
   }
 
   .descricao {
-    max-width: 42ch;
     font-size: 1rem;
     margin: 0.5rem 0;
     line-height: 1.55rem;
@@ -114,14 +114,10 @@
 
   .descricao {
     max-width: 70ch;
-    font-size: 1rem;
     margin: 0.8rem 0;
-    line-height: 1.55rem;
   }
 
   .foto-container img {
-    /* margin-top: 64px;
-    max-width: 22rem; */
     display: none;
   }
 }
@@ -138,17 +134,13 @@
   }
 
   .dev::before {
-    width: 100%;
-    height: 100%; 
     top: 0px;
     left: -1.1rem;
   }
 
   .descricao {
     max-width: 48ch;
-    font-size: 1rem;
     margin: 1.1rem 0;
-    line-height: 1.55rem;
     padding-right: 9px;
   }
 

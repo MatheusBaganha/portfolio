@@ -6,8 +6,10 @@
 body {
   background-color: #1F1F1F;
   font-family: 'Poppins', sans-serif;
-  /* max-width: 1300px; */
+  /* max-width: 1480px; */
   margin: 0 auto;
+  background-color: #1F1F1F;
+  overflow-x: hidden;
 }
 
 ul {
@@ -18,20 +20,28 @@ ul {
   color: #F9F9F9;
   font-size: 4rem;
   font-weight: 700;
-  position: relative;
   text-shadow: 5px 5px rgba(0, 0, 0, .15);
 }
 
-b, a {
-  color: #7562E0;
+.paragrafo {
+  color: #CBCBCB;
+  font-size: 0.875rem;
+  font-weight: 400;
+  word-wrap: break-word;
+  max-width: 83ch;
+}
+
+.titulo + .paragrafo {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
 }
 
 a {
   text-decoration: none;
 }
 
-.radius {
-  border-radius: 3px;
+b, a {
+  color: #7562E0;
 }
 
 .veja-mais {
