@@ -1,7 +1,7 @@
 .experiencia-container {
   background-color: #292929;
   max-width: 100vw;
-  padding: 4rem 8rem 5.75rem 8rem;
+  padding: 4rem 8rem 1rem 8rem;
   overflow: hidden;
   position: relative;
 }
@@ -162,7 +162,7 @@ input[type=radio] {
 
 @media(max-width: 1180px) {
   .experiencia-container {
-    padding: 4rem 4rem 5.75rem 4rem;    
+    padding: 4rem 4rem 1rem 4rem;    
   }
 }
 
@@ -189,7 +189,7 @@ input[type=radio] {
   }
 
   .left-button, .right-button {
-    top: 75%;
+    top: 85%;
   }
 
   .slides {
@@ -242,7 +242,7 @@ input[type=radio] {
 
 @media(max-width: 540px) {
   .experiencia-container {
-    padding: 4rem 2rem 4rem 3rem;
+    padding: 4rem 2rem 1rem 3rem;
   }
 
   .experiencia-container > .titulo {
@@ -281,10 +281,6 @@ input[type=radio] {
   
   #radio3:checked ~ .first {
     margin-left: -133.6%;
-  }
-
-  .left-button, .right-button {
-    top: 78%;
   }
 }
 
