@@ -206,12 +206,6 @@
     max-width: 60ch; 
   }
 
-  .container-projeto > .paragrafo {
-    max-width: 55ch;
-    padding-right: 12px;
-    font-size: 0.85rem;
-  }
-
   .container-idiomas {
     width: 16rem;
   }
