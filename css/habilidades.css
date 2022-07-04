@@ -4,14 +4,13 @@
 
 .cursos-container-geral {
   display: grid;
-  grid-template-columns: repeat(3, minmax(18.75rem, 1fr));
+  grid-template-columns: repeat(3, minmax(15.75rem, 1fr));
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: 
   "design1 css1 js1"
   "design2 css2 js2"
   "design3 css3 js3"
   "design4 css4 js4";
-  padding-right: 4rem;
   padding-left: 3px;
   gap: 1.125rem 4.25rem;
   width: 100%;
@@ -19,8 +18,8 @@
 
 @media(min-width: 1400px) {
   .cursos-container-geral {
-    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
-    gap: 1.125rem 4rem;
+    grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+    gap: 1.125rem 0.8rem;
   }
 }
 /* mudar tamanho do mediaquery */
@@ -170,6 +169,7 @@
   color: #E8E8E8;
   font-size: 1rem;
   font-weight: 700;
+  padding-right: 32px;
   padding-bottom: 0.75rem;
 }
 
@@ -179,5 +179,52 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
+}
+
+@media(max-width: 1260px) {
+  .nome-curso {
+    font-size: 0.8rem;
+  }
+  
+  .horas-curso {
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width: 1180px) {
+  .container-habilidades {
+    padding: 4rem 4rem 5.75rem 4rem;    
+  }
+}
+
+@media(max-width: 850px) {
+  .container-habilidades > .titulo {
+    font-size: 2.8rem;
+  }
+
+  .container-habilidades > .paragrafo {
+    max-width: 60ch; 
+  }
+
+  .container-projeto > .paragrafo {
+    max-width: 55ch;
+    padding-right: 12px;
+    font-size: 0.85rem;
+  }
+
+  .container-idiomas {
+    width: 16rem;
+  }
+}
+
+@media(max-width: 540px) {
+  .container-habilidades {
+    padding: 4rem 2rem 4rem 3rem;
+  }
+
+  .container-habilidades > .titulo {
+    font-size: 2.4rem;
+  }
+ 
 }
 
