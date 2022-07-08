@@ -1,51 +1,41 @@
 .footer-container {
-  display: grid;
-  grid-template-columns: minmax(18.75rem, 1fr) 1fr;
-  grid-template-areas: 
-  "contato contato"
-  "disponivel info"
-  "nome nome";
-  padding: 7.18rem 8rem 3rem 7.18rem;
-  align-items: center;
-  justify-content: center;
-  gap: 0 14.25rem;
-  background-color: #292929;
+  padding: 4rem 8rem 4rem 8rem;
   position: relative;
+  background-color: #292929;
 }
 
-.contato {
-  grid-area: contato;
+.informacoesFooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 0 6rem;
+  z-index: 333;
 }
 
-.disponivel {
-  grid-area: disponivel;
-  margin: 2rem 0 4rem 0;
-  width: 50ch;
-}
-
-.contato-info {
-  grid-area: info;
-  margin-top: 5px;
-}
 
 .nome {
-  grid-area: nome;
-  color: #E5E5E5;
+  order: 2;
+  color: #d4d4d4;
   font-size: 1.3rem;
+  margin-top: -12px;
 }
 
-.contato-info ul {
-  list-style: none;
+.footer-container > .paragrafo {
+  margin-bottom: 5rem;
 }
 
-.font-contato {
-  color: #F5F5F5;
+.mensagem, .contatos {
+  max-width: 42ch;
+  color: #d4d4d4;
   font-size: 1.3rem;
   font-weight: 400;
 }
 
 .contatos li {
   margin-bottom: 1rem;
+  border-bottom: 2px solid #242424;
+  padding-bottom: 16px;
 }
 
 .rede-social {
@@ -56,11 +46,12 @@
 
 .footer-container::after {
   content: '';
-  display: inline-block;
-  width: 90%;
-  height: 90%;
+  display: block;
+  width: 100%;
+  height: 100%;
   background: url('../svg/detalhe.svg') no-repeat;
   position: absolute;
   left: 8rem;
   top: -3.125rem;
+  pointer-events: none; /*Necessário para clicks funcionarem em footer*/
 }

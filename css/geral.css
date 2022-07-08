@@ -25,14 +25,15 @@ ul {
 
 .paragrafo {
   color: #CBCBCB;
-  font-size: 0.875rem;
   font-weight: 400;
+  font-size: 0.875rem;
   word-wrap: break-word;
   max-width: 83ch;
 }
 
 .titulo + .paragrafo {
   margin-top: 1rem;
+  font-size: 1rem;
   margin-bottom: 5rem;
 }
 
