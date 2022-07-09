@@ -193,7 +193,13 @@
 
 @media(max-width: 1180px) {
   .container-habilidades {
-    padding: 4rem 4rem 5.75rem 4rem;    
+    padding: 4rem 4rem 4rem 4rem;    
+  }
+}
+
+@media(max-width: 540px) {
+  .container-habilidades {
+    padding: 4rem 4rem 4rem 3rem; 
   }
 }
 
