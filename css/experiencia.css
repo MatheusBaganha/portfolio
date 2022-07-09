@@ -196,14 +196,6 @@ input[type=radio] {
     max-width: max-content;
     max-height: 500px;
   }
-  
-  .experiencia-container > .titulo {
-    font-size: 2.8rem;
-  }
-
-  .experiencia-container > .paragrafo {
-    max-width: 60ch; 
-  }
 
   .container-projeto > .paragrafo {
     max-width: 55ch;
@@ -230,10 +222,6 @@ input[type=radio] {
     margin: -0.5rem auto;
   }
 
-  .experiencia-container > .titulo {
-    font-size: 2.5rem;
-  }
-
   .container-projeto > .paragrafo {
     max-width: 50ch;
     padding-right: 16px;
@@ -243,14 +231,6 @@ input[type=radio] {
 @media(max-width: 540px) {
   .experiencia-container {
     padding: 4rem 2rem 1rem 3rem;
-  }
-
-  .experiencia-container > .titulo {
-    font-size: 2.4rem;
-  }
-
-  .experiencia-container > .paragrafo {
-    font-size: 0.87rem;
   }
 
   .slider {

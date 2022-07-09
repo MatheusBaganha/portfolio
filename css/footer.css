@@ -96,21 +96,12 @@
 }
 
 @media(max-width: 850px) {
-  .footer-container > .titulo {
-    font-size: 2.8rem;
-  }
-
   .footer-container > .paragrafo {
     max-width: 60ch; 
-    font-size: 0.87rem;
   }
 }
 
 @media(max-width: 610px) {
-  .footer-container > .titulo {
-    font-size: 2.5rem;
-  }
-
   .footer-container > .paragrafo {
     max-width: 50ch;
     padding-right: 16px;
@@ -125,14 +116,6 @@
 @media(max-width: 540px) {
   .footer-container {
     padding: 5rem 2rem 2rem 3rem;
-  }
-
-  .footer-container > .titulo {
-    font-size: 2.4rem;
-  }
-
-  .footer-container > .paragrafo {
-    font-size: 0.87rem;
   }
 
   .footer-container::after {

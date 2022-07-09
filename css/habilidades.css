@@ -22,7 +22,7 @@
     gap: 1.125rem 0.8rem;
   }
 }
-/* mudar tamanho do mediaquery */
+
 @media(max-width: 1023px) {
   .cursos-container-geral {
     gap: 1.125rem 2.625rem;
@@ -182,7 +182,6 @@
 }
 
 @media(max-width: 1260px) {
-
   .nome-curso {
     font-size: 0.8rem;
   }
@@ -199,27 +198,7 @@
 }
 
 @media(max-width: 850px) {
-  .container-habilidades > .titulo {
-    font-size: 2.8rem;
-  }
-
-  .container-habilidades > .paragrafo {
-    max-width: 60ch; 
-  }
-
   .container-idiomas {
     width: 16rem;
   }
 }
-
-@media(max-width: 540px) {
-  .container-habilidades {
-    padding: 4rem 2rem 5rem 3rem;
-  }
-
-  .container-habilidades > .titulo {
-    font-size: 2.4rem;
-  }
- 
-}
-
