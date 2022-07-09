@@ -10,7 +10,6 @@
   justify-content: flex-start;
   align-items: baseline;
   gap: 0 6rem;
-  z-index: 333;
 }
 
 .nome {
@@ -78,12 +77,6 @@
     padding-bottom: 16px;
   }
   
-  .mensagem, .contatos {
-    max-width: 42ch;
-    color: #d4d4d4;
-    font-weight: 400;
-  }
-
   .footer-container::after {
     left: 4rem;
   }
@@ -92,12 +85,6 @@
 @media(max-width: 886px) {
   .contato-info {
     margin-top: 64px;
-  }
-}
-
-@media(max-width: 850px) {
-  .footer-container > .paragrafo {
-    max-width: 60ch; 
   }
 }
 
@@ -111,7 +98,6 @@
     font-size: 0.875rem;
   }
 }
-
 
 @media(max-width: 540px) {
   .footer-container {
