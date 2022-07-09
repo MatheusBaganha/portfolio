@@ -1,5 +1,5 @@
 .footer-container {
-  padding: 4rem 8rem 4rem 8rem;
+  padding: 5rem 4rem 4rem 8rem;
   position: relative;
   background-color: #292929;
 }
@@ -13,16 +13,13 @@
   z-index: 333;
 }
 
-
 .nome {
-  order: 2;
   color: #d4d4d4;
   font-size: 1.3rem;
-  margin-top: -12px;
 }
 
-.footer-container > .paragrafo {
-  margin-bottom: 5rem;
+.mensagem {
+  padding-bottom: 36px;
 }
 
 .mensagem, .contatos {
@@ -30,6 +27,10 @@
   color: #d4d4d4;
   font-size: 1.3rem;
   font-weight: 400;
+}
+
+.footer-container > .paragrafo {
+  margin-bottom: 4.8rem;
 }
 
 .contatos li {
@@ -43,15 +44,98 @@
   gap: 0 1rem;
 }
 
-
 .footer-container::after {
   content: '';
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 150px;
+  height: 100px;
   background: url('../svg/detalhe.svg') no-repeat;
   position: absolute;
   left: 8rem;
   top: -3.125rem;
-  pointer-events: none; /*Necessário para clicks funcionarem em footer*/
+  pointer-events: none; /* Necessário para clicks funcionarem em footer */
+}
+
+
+@media(max-width: 1180px) {
+  .footer-container {
+    padding: 5rem 3rem 3rem 4rem;
+  }
+
+  .footer-container > .paragrafo {
+    margin-bottom: 3rem;
+  }
+ 
+  .contato-info {
+    margin-top: 32px;
+  }
+
+  .nome, .mensagem, .contatos {
+    font-size: 1rem;
+  }
+  
+  .mensagem {
+    padding-bottom: 16px;
+  }
+  
+  .mensagem, .contatos {
+    max-width: 42ch;
+    color: #d4d4d4;
+    font-weight: 400;
+  }
+
+  .footer-container::after {
+    left: 4rem;
+  }
+}
+
+@media(max-width: 886px) {
+  .contato-info {
+    margin-top: 64px;
+  }
+}
+
+@media(max-width: 850px) {
+  .footer-container > .titulo {
+    font-size: 2.8rem;
+  }
+
+  .footer-container > .paragrafo {
+    max-width: 60ch; 
+    font-size: 0.87rem;
+  }
+}
+
+@media(max-width: 610px) {
+  .footer-container > .titulo {
+    font-size: 2.5rem;
+  }
+
+  .footer-container > .paragrafo {
+    max-width: 50ch;
+    padding-right: 16px;
+  }
+
+  .nome, .mensagem, .contatos {
+    font-size: 0.875rem;
+  }
+}
+
+
+@media(max-width: 540px) {
+  .footer-container {
+    padding: 5rem 2rem 2rem 3rem;
+  }
+
+  .footer-container > .titulo {
+    font-size: 2.4rem;
+  }
+
+  .footer-container > .paragrafo {
+    font-size: 0.87rem;
+  }
+
+  .footer-container::after {
+    left: 3rem;
+  }
 }
