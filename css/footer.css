@@ -84,7 +84,22 @@
 
 @media(max-width: 886px) {
   .contato-info {
-    margin-top: 64px;
+    margin-top: 42px
+  }
+
+  .mensagem-bg {
+    width: 70vw;
+    border-radius: 3px;
+    padding: 1rem 0.7rem;
+    background-color: #242424;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, .10);
+  }
+
+  .informacoesFooter {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 6rem;
   }
 }
 
@@ -106,5 +121,10 @@
 
   .footer-container::after {
     left: 3rem;
+  }
+
+  .rede-social img {
+    width: 30px;
+    height: 30px;
   }
 }

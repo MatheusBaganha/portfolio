@@ -123,7 +123,6 @@
   position: relative;
   border: 1px solid rgba(0, 0, 0, .1);
   box-shadow: 1px 1px 6px rgba(0, 0, 0, .10);
-
 }
 
 .curso-container::before, .ingles-container::before, .css::before, .js::before {
@@ -197,14 +196,18 @@
   }
 }
 
+@media(max-width: 850px) {
+  .container-idiomas {
+    width: 16rem;
+  }
+}
+
 @media(max-width: 540px) {
   .container-habilidades {
     padding: 4rem 4rem 4rem 3rem; 
   }
-}
 
-@media(max-width: 850px) {
   .container-idiomas {
-    width: 16rem;
+    width: 14rem;
   }
 }
