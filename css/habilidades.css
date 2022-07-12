@@ -192,7 +192,7 @@
 
 @media(max-width: 1180px) {
   .container-habilidades {
-    padding: 4rem 4rem 4rem 4rem;    
+    padding: 4rem 4rem 5rem 4rem;    
   }
 }
 
@@ -204,10 +204,38 @@
 
 @media(max-width: 540px) {
   .container-habilidades {
-    padding: 4rem 4rem 4rem 3rem; 
+    padding: 4rem 4rem 5rem 3rem; 
   }
 
   .container-idiomas {
     width: 14rem;
+  }
+}
+
+@media(max-width: 430px) {
+  .arrow {
+    position: relative;
+  }
+
+  .arrow::after {
+    content: '';
+    background-image: url('../svg/arrow-right.svg');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 248px;
+    right: 32px;
+    animation: moving .3s infinite alternate;
+  }
+
+  @keyframes moving {
+    from {
+      margin: initial;
+    }
+
+    to {
+      margin-right: 6px;
+    }
   }
 }

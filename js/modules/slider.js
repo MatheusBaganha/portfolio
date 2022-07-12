@@ -20,7 +20,7 @@ export default class Slider {
     setInterval(() => {
       this.nextImage();
       this.showActive();
-    }, 5000);
+    }, 7000);
   }
 
   // Mostra qual item está ativo na tela

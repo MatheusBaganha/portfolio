@@ -1,5 +1,5 @@
 import MenuMobile from './modules/MenuMobile.js';
-import Slider from './modules/slider.js';
+import Slider from './modules/Slider.js';
 
 const Menu = new MenuMobile('[data-nav]', '[data-btn]', 'aberto', '[data-header]');
 Menu.init();
