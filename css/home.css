@@ -22,7 +22,6 @@
   display: flex;
   background: url('../svg/detalhe.svg') no-repeat;
   width: 100%;
-  max-width: 150px;
   height: 100%;
   position: absolute;
   z-index: -1; 
@@ -134,7 +133,6 @@
   }
 
   .dev::before {
-    top: 0px;
     left: -1.1rem;
   }
 
@@ -170,9 +168,8 @@
   }
 
   .dev::before {
-    width: 140%;
-    height: 140%; 
-    top: -10px;
+    width: 150px;
+    height: 120px; 
     left: -1rem;
   }
 }

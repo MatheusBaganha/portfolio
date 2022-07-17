@@ -81,3 +81,16 @@ b, a {
     font-size: 0.87rem;
   }
 }
+
+
+[data-anime] {
+  opacity: 0;
+  transition: .3s;
+  transform: translate3d(-50px, 0, 0);
+
+}
+
+[data-anime].animar {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
