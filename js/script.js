@@ -3,7 +3,6 @@ import Slider from './modules/slider.js';
 import ScrollSuave from './modules/ScrollSuave.js';
 import AnimaScroll from './modules/AnimaScroll.js';
 
-
 const Menu = new MenuMobile('[data-nav]', '[data-btn]', 'aberto', '[data-header]');
 Menu.init();
 
