@@ -1,18 +1,21 @@
 .experiencia-container {
   background-color: #292929;
   max-width: 100vw;
-  padding: 3rem 8rem 1rem 8rem;
+  padding: 3rem 8rem 3rem 8rem;
   overflow: hidden;
   position: relative;
 }
 
+.experiencia-container > .paragrafo {
+  margin-bottom: 6rem;
+}
 
 /* Slider */
 
 .slider {
   margin: 0 auto;
   max-width: 715px;
-  height: 600px;
+  height: 500px;
   overflow: hidden;
 }
 
@@ -24,7 +27,7 @@
   flex: 1 0 auto;
   margin: 0;
   width: 315%;
-  height: 600px;
+  height: 500px;
   position: relative;
 }
 
@@ -33,7 +36,7 @@
   display: flex;
   width: 740px;
   justify-content: center;
-  margin: -16px auto 0 auto;
+  margin: -42px auto 0 auto;
   gap: 0 20px;
 }
 
@@ -198,7 +201,6 @@ input[type=radio] {
   }
 
   .container-projeto > .paragrafo {
-    /* max-width: 55ch; */
     font-size: 0.85rem;
   }
   
