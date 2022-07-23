@@ -52,7 +52,7 @@ b, a {
 .titulo + .paragrafo {
   margin-top: 1rem;
   font-size: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4.5rem;
 }
 
 @media(max-width: 850px) {

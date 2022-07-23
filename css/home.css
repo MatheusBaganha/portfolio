@@ -71,6 +71,22 @@
   grid-area: descricao;
 }
 
+.descricao::after {
+  content: '|';   
+  opacity: 0;
+  margin-left: 5px;
+  animation: efeitoEscrever .7s infinite alternate-reverse;
+}
+
+@keyframes efeitoEscrever {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .botao {
   display: block;
   background-color: #5C49C7;
