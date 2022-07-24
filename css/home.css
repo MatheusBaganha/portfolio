@@ -186,7 +186,7 @@
 
 @media(max-width: 380px) { 
   .home-container {
-    margin: 4rem 2rem 0.5rem 3rem;
+    margin: 4rem 2rem 0.5rem 2rem;
   }
   
   .dev {
@@ -196,7 +196,7 @@
   }
 
   .descricao {
-    max-width: 30ch;
+    max-width: 40ch;
     font-size: 0.8rem;
     margin: 1rem 0;
     line-height: 1.3rem;

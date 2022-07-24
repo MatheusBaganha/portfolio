@@ -46,7 +46,7 @@
 
 @media(max-width: 1180px) {
   .header {
-    padding: 2rem 0rem 2rem 4rem;
+    padding: 2rem;
   }
 
   .itens-li li:last-child {
@@ -56,14 +56,14 @@
 
 @media(max-width: 750px) {
   .logo-container {
-    margin-left: 16px;
+    margin-left: 2rem;
   }
 
   .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 0rem 2rem 3rem;
+    padding: 2rem 0rem 2rem 2rem;
   }
 
   .header.aberto {
@@ -160,6 +160,12 @@
 
 @media(max-width: 550px) {
   .logo-container {
-    margin-left: 0px;
+    margin-left: 1rem;
+  }
+}
+
+@media(max-width: 380px) {
+  .logo-container {
+    margin-left: 0rem;
   }
 }

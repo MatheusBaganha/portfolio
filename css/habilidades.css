@@ -205,11 +205,11 @@
 
 @media(max-width: 540px) {
   .container-habilidades {
-    padding: 4rem 4rem 5rem 3rem; 
+    padding: 4rem 2rem 5rem 2rem; 
   }
 
   .container-idiomas {
-    width: 14rem;
+    width: 16rem;
   }
 }
 
@@ -227,10 +227,10 @@
     position: absolute;
     bottom: 248px;
     right: 32px;
-    animation: moving .3s infinite alternate;
+    animation: movingArrow .3s infinite alternate;
   }
 
-  @keyframes moving {
+  @keyframes movingArrow {
     from {
       margin: initial;
     }
