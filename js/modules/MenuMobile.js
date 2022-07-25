@@ -48,7 +48,7 @@ export default class MenuMobile {
       this.btnMenu.addEventListener(event, (e) => {
         e.preventDefault();
         this.menuToggle();
-      });
+      }, { passive: false });
     });
 
     return this;
