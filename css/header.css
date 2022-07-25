@@ -52,13 +52,13 @@
   .itens-li li:last-child {
     padding-right: 4rem;
   }
-}
 
-@media(max-width: 750px) {
   .logo-container {
     margin-left: 2rem;
   }
+}
 
+@media(max-width: 750px) {
   .header {
     display: flex;
     align-items: center;
