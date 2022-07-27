@@ -72,7 +72,7 @@
 
   .menu-mobile-btn {
     display: block;
-    margin-left: -82px;
+    margin-left: -64px;
     border-radius: 3px;
     padding: 0.5rem;
     background-color: #292929;
@@ -134,7 +134,7 @@
     height: 0;
     top: 72px;
     left: 0;
-    padding: 0 0 16px 32px;
+    padding: 0 0 16px 16px;
     box-sizing: border-box;
     z-index: 5;
     opacity: 0;
@@ -159,12 +159,6 @@
 }
 
 @media(max-width: 550px) {
-  .logo-container {
-    margin-left: 1rem;
-  }
-}
-
-@media(max-width: 380px) {
   .logo-container {
     margin-left: 0rem;
   }

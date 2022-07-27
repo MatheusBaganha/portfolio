@@ -159,7 +159,7 @@
 
 @media(max-width: 550px) {
   .home-container {
-    margin: 4rem 2rem 1rem 3rem;
+    margin: 3rem 2rem 1rem 2rem;
   }
 
   .dev {
@@ -169,7 +169,9 @@
   }
 
   .dev::before {
-    left: -1.1rem;
+    left: -1rem;
+    width: 149px;
+    height: 95px;
   }
 
   .descricao {
@@ -186,7 +188,7 @@
 
 @media(max-width: 380px) { 
   .home-container {
-    margin: 4rem 2rem 0.5rem 2rem;
+    margin: 3rem 2rem 0.5rem 2rem;
   }
   
   .dev {
