@@ -1,13 +1,1 @@
-export default function debounce(callback, delay) {
-  let timer;
-  return (...args) => {
-    if (timer) clearTimeout(timer);
-    timer = setTimeout(() => {
-      callback(...args);
-      timer = null;
-    }, delay);
-  };
-}
-
-// Debounce será usado toda vez que uma função se
-//  repete a cada minima ação desnecessariamente
+export default function debounce(e,t){let u;return(...l)=>{u&&clearTimeout(u),u=setTimeout((()=>{e(...l),u=null}),t)}}
