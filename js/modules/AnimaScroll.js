@@ -1,5 +1,3 @@
-import debounce from './debounce.js';
-
 export default class AnimaScroll {
   constructor(animateContents, classAnimate) {
     // animateContents são todos os containers que devem ser animados
@@ -13,6 +11,19 @@ export default class AnimaScroll {
     this.addEvents();
     this.animateOnScroll();
   }
+
+  debounce(callback, delay) {
+    let timer;
+    return (...args) => {
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(() => {
+        callback(...args);
+        timer = null;
+      }, delay);
+    };
+  }
+  //  Debounce será usado toda vez que uma função se
+  //  repete a cada minima ação desnecessariamente
 
   animateOnScroll() {
     // Espera até chegar a quase 1/4 da tela em relação ao container para ativar
@@ -28,7 +39,7 @@ export default class AnimaScroll {
   addEvents() {
     // Se existir conteudo para ser animado, adicione o evento
     if (this.animateContents.length) {
-      window.addEventListener('scroll', debounce(this.animateOnScroll, 200));
+      window.addEventListener('scroll', this.debounce(this.animateOnScroll, 200));
     }
   }
 }
