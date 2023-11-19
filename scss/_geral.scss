@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #1F1F1F;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+b, a {
+  color: #7562E0;
+}
+
+.veja-mais {
+  color: #A090FC;
+  font-weight: 400;
+  cursor: pointer;
+  transition: .1s ease-out;
+}
+
+.veja-mais:hover, .veja-mais:active  { 
+  color: #7562E0;
+}
+
+.titulo {
+  color: #F9F9F9;
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 5px 5px rgba(0, 0, 0, .15);
+}
+
+.paragrafo {
+  color: #CBCBCB;
+  font-weight: 400;
+  font-size: 0.875rem;
+  word-wrap: break-word;
+  max-width: 83ch;
+}
+
+.titulo + .paragrafo {
+  margin-top: 1rem;
+  font-size: 1rem;
+  margin-bottom: 4.5rem;
+}
+
+@media(max-width: 850px) {
+  .container > .titulo {
+    font-size: 2.8rem;
+  }
+
+  .container > .paragrafo {
+    max-width: 60ch; 
+  }
+}
+
+@media(max-width: 610px) {
+  .container > .titulo {
+    font-size: 2.5rem;
+  }
+}
+
+@media(max-width: 540px) {
+  .container > .titulo {
+    font-size: 2.2rem;
+  }
+
+  .container > .paragrafo {
+    font-size: 0.87rem;
+  }
+}
+
+[data-anime] {
+  opacity: 0;
+  transition: .3s;
+  transform: translate3d(-50px, 0, 0);
+  will-change: transform;
+}
+
+[data-anime].animar {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}

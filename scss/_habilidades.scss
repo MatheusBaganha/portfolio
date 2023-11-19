@@ -1,0 +1,242 @@
+.container-habilidades {
+  padding: 3rem 8rem 6rem 8rem;
+}
+
+.cursos-container-geral {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(15.75rem, 1fr));
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+  "design css js"
+  "design css js"
+  "design css js"
+  "design css js";
+  padding-left: 3px;
+  gap: 0rem 4.25rem;
+  width: 100%;
+}
+
+.cursos-container-geral .curso-container {
+  margin-top: 1.125rem;
+}
+
+@media(min-width: 1400px) {
+  .cursos-container-geral {
+    grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+    gap: 1.125rem 0.8rem;
+  }
+}
+
+@media(max-width: 1023px) {
+  .cursos-container-geral {
+    gap: 1.125rem 2.625rem;
+    padding-bottom: 1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}
+
+.design-container {
+  grid-area: design;
+}
+
+.css-container {
+  grid-area: css;
+}
+
+.js-container {
+  grid-area: js;
+}
+
+.cursos-intensivos {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #EFEFEF;
+  position: relative;
+  padding-left: 3rem;
+  margin-bottom: 2.625rem;
+}
+
+.cursos-intensivos::before, .idiomas::before, .faculdade::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.cursos-intensivos::before, .faculdade::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cursos-intensivos::before {
+  background: url('../svg/livro.svg') no-repeat;
+}
+
+.faculdade::before {
+  background: url('../svg/ensinoSuperior.svg') no-repeat;
+  top: -5px;
+}
+
+.container-idiomas, .container-faculdade {
+  margin-top: 2.8rem;
+  width: 19.5rem;
+}
+
+.idiomas, .faculdade {
+  margin-bottom: 2rem;
+}
+
+.idiomas::before {
+  background: url('../svg/idioma.svg') no-repeat;
+  top: -5px;
+}
+
+.curso-container, .ingles-container, .faculdade-container {
+  display: block;
+  max-width: 17rem;
+  border-radius: 3px;
+  padding: 1rem;
+  background: linear-gradient(90deg,#292929,#252525);
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, .1);
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, .10);
+}
+
+.curso-container::before, .ingles-container::before, .faculdade-container::before {
+  content: '';
+  width: 4px;
+  height: 30px;
+  display: inline-block;
+  background-color: #A090FC;
+  position: absolute;
+  top: 1rem;
+  left: -3px;
+  border-radius: 3px;
+}
+
+.curso-container::after, .ingles-container::after, .faculdade-container::after  {
+  font-size: 0.875rem;
+  color: #BFBEBE;
+  font-weight: 400;
+}
+
+.curso-container::after {
+  content: 'Origamid';
+}
+
+.css::before {
+  background-color: #6D5BD0;
+}
+
+.js::before {
+  background-color: #3E2BAD;
+}
+
+.ingles-container::before {
+  background-color: #321DA9;
+}
+
+.faculdade-container::before {
+  background-color: #281787;
+}
+
+.ingles-container::after {
+  content: 'Cultura Inglesa';
+}
+
+.faculdade-container::after {
+  content: 'Mackenzie'
+}
+
+.nome-curso {
+  color: #E8E8E8;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-right: 32px;
+  padding-bottom: 0.75rem;
+}
+
+.nomeGraduacao {
+  font-size: 0.9rem;
+}
+
+.horas-curso, .horas-graduacao {
+  font-size: 1rem;
+  color: #BFBEBE;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.horas-graduacao {
+  font-size: 0.9rem;
+}
+
+@media(max-width: 1260px) {
+  .nome-curso {
+    font-size: 0.8rem;
+  }
+  
+  .horas-curso {
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width: 1180px) {
+  .container-habilidades {
+    padding: 4rem 4rem 5rem 4rem;    
+  }
+}
+
+@media(max-width: 850px) {
+  .container-idiomas, .container-faculdade {
+    width: 16rem;
+    margin-top: 3.2rem;
+  }
+  
+  .nomeGraduacao {
+    font-size: 0.7rem;
+  }
+  
+  .horas-graduacao {
+    font-size: 0.7rem;
+  }
+}
+
+@media(max-width: 540px) {
+  .container-habilidades {
+    padding: 4rem 2rem 5rem 2rem; 
+  }
+}
+
+@media(max-width: 430px) {
+  @keyframes movingArrow {
+    from {
+      margin: initial;
+    }
+
+    to {
+      margin-right: 6px;
+    }
+  }
+
+  .arrow {
+    position: relative;
+  }
+
+  .arrow::after {
+    content: '';
+    background-image: url('../svg/arrow-right.svg');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 450px;
+    right: 32px;
+    animation: movingArrow .3s infinite alternate;
+  }
+}
